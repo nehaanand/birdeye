@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@drawable/gradient_header"
+    android:minHeight="@dimen/abc_action_bar_default_height_material"
+    local:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+    local:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+
+
+</android.support.v7.widget.Toolbar>

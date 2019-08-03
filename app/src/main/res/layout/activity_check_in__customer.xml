@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#70E2E2E2"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:id="@+id/scrllview"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:elevation="10dp"
+                        app:cardBackgroundColor="#e2e2e2"
+                        app:cardCornerRadius="10dp"
+                        app:cardPreventCornerOverlap="false"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:id="@+id/ll_edittext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/ll_person_name"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/edit_text_outline"
+                                android:orientation="horizontal"
+                                android:visibility="gone">
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:id="@+id/personname"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingTop="10dp"
+                                    android:textColorHint="#c1c2c4"
+
+                                    app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+                                    <EditText
+                                        android:id="@+id/et_entry_no"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:layout_gravity="center"
+                                        android:backgroundTint="@android:color/transparent"
+                                        android:hint="Entry No."
+                                        android:inputType="text"
+                                        android:maxLength="10"
+                                        android:paddingTop="7dp"
+                                        android:singleLine="true"
+                                        android:textColor="@color/colorDash"
+                                        android:textColorHint="@color/colorDash"
+                                        android:textSize="@dimen/text_size"
+                                        android:theme="@style/EditTextTheme" />
+                                </android.support.design.widget.TextInputLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/edit_text_outline"
+                                android:orientation="horizontal">
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="10dp"
+                                    android:textColorHint="#80000000"
+                                    app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+                                    >
+
+                                    <EditText
+                                        android:id="@+id/et_name"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:backgroundTint="@android:color/transparent"
+                                        android:hint="Name"
+                                        android:inputType="text"
+                                        android:paddingTop="15dp"
+                                        android:textColor="@color/colorDash"
+                                        android:textColorHint="@color/colorDash"
+                                        android:textSize="@dimen/edittexthint"
+                                        android:theme="@style/EditTextTheme" />
+                                </android.support.design.widget.TextInputLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/edit_text_outline"
+                                android:orientation="horizontal">
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="10dp"
+                                    android:textColorHint="#80000000"
+                                    app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+                                    >
+
+                                    <EditText
+                                        android:id="@+id/et_emailid"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:backgroundTint="@android:color/transparent"
+                                        android:hint="Email ID"
+                                        android:inputType="text"
+                                        android:paddingTop="15dp"
+                                        android:textColor="@color/colorDash"
+                                        android:textColorHint="@color/colorDash"
+                                        android:textSize="@dimen/edittexthint"
+                                        android:theme="@style/EditTextTheme" />
+                                </android.support.design.widget.TextInputLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="30dp"
+                                android:background="@drawable/edit_text_outline"
+                                android:orientation="horizontal">
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="10dp"
+                                    android:textColorHint="#80000000"
+                                    app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+                                    >
+
+                                    <EditText
+                                        android:id="@+id/et_phone"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:backgroundTint="@android:color/transparent"
+                                        android:hint="Phone(408-xxx-xxxx)"
+                                        android:inputType="text"
+                                        android:paddingTop="15dp"
+                                        android:textColor="@color/colorDash"
+                                        android:textColorHint="@color/colorDash"
+                                        android:textSize="@dimen/edittexthint"
+                                        android:theme="@style/EditTextTheme" />
+                                </android.support.design.widget.TextInputLayout>
+                            </LinearLayout>
+
+
+
+
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-13dp"
+                    android:gravity="center"
+                    android:weightSum="2">
+
+                    <Button
+                        android:id="@+id/btn_save"
+                        android:layout_width="140dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="#BB5060"
+                        android:text="CHECKIN"
+
+                        android:textColor="@android:color/white" />
+
+                    <Button
+                        android:id="@+id/btn_checkout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:background="#BB5060"
+                        android:text="CHECKOUT"
+                        android:textColor="@android:color/white"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

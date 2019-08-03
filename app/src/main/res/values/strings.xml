@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BirdEyeAssignment</string>
+    <string name="asc">Name A-Z</string>
+    <string name="desc">Name Z-A</string>
+</resources>
